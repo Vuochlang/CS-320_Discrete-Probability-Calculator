@@ -1,0 +1,34 @@
+http://www.plantuml.com/plantuml/uml/VL9DY_8m4BxFhvXZFFGFz21I1JtrBI_87fSOXpPicfHyhCgo_tsJD584wQ5zc7a-CXEoSvvR7qO5zTcHhP4xF0Fx82NCI3ZndZQfToC5vwhQ9cGdKjD2fGhOVZ364GgkH53SIwCpAGQ0wAckvgQhRQmi2SzrhmZtY_JptvJ0uG-mHcepIgwolJd4qnuJsPxYEDvACHyPsotrqVjD-69eawCpqhaoG1VhuulvU00nn5MQWgU2xRFH5Op2Ns1qzsGrLtbXbnCKSQiX_wimLTj5SwEBapxAuCrsvHBoVRsZKzGStHomY97z9nUKts2DKa_1msc5QzUCtGftNE5WRc2U3vaO4jKRl73nXTxWy7meHRWaNHw4yTlKI7VfOKVw6aRr1m00
+@startuml
+:User: as U
+(Welcome page) as wel
+U-->wel
+(Help page) as Help
+(Choose calculation) as ch
+
+wel-down->ch
+rectangle Calculation_Options {
+(Binomial) as BD
+(Hypergeometric) as HD
+(Negative Binomial) as NBD
+(Poisson) as PD
+(Geometric) as GD
+ch-->BD
+ch-->HD
+ch-->NBD
+ch-->PD
+ch-->GD
+}
+(external pages) as learn
+learn-up->(external websites)
+Calculation_Options-down->Help
+Calculation_Options-up->learn
+BD -down-> (Result) : input
+HD -down-> (Result) : input
+NBD -down-> (Result) : input
+PD -down-> (Result) : input
+GD -down-> (Result) : input
+
+Result -up-> (ch) : go back to home page
+Result -down-> (bye bye): exit
+@enduml
