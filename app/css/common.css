@@ -1,0 +1,460 @@
+html,body{
+			width:100%;
+			height:100%;
+			margin:0px;
+			/*border:0px;*/
+      /*overflow: scroll;*/
+      /*position: absolute;*/
+      		/*display:block; no floating*/
+}
+#b1:hover{
+	color:#40E0D0;
+}
+#b2:hover{
+	color:#EE82EE;
+}
+#b3:hover{
+	color:#6A5ACD;
+}
+#b4:hover{
+	color:#CD853F;
+}
+#b5:hover{
+	color:#90EE90;
+}
+
+.logo{
+  width: 160px;
+  height: 200px;
+}
+
+#error1,#error2,#error3,#error4{
+  color:rgb(117, 23, 23);
+  border:none;
+  background-color:transparent;
+  width: 250px;
+}
+
+#explain p{
+  font:"Lucida Sans Unicode";
+  width:100%;
+}
+
+.sideMenu {
+  width: 20%;
+  float:left;
+}
+
+.iconTop {
+  display: block;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+  height: 200px;
+  background-image: url("../image/mix.jpg");
+  background-repeat: no-repeat;
+  background-size: 160px 200px;
+  background-position: center;
+  padding: 0.5em;
+}
+
+.iconTop:hover {
+  background-image: url("../image/mix2.jpg");
+  background-repeat: no-repeat;
+  background-size: 160px 200px;
+  background-position: center;
+}
+
+.topnav {
+  display: none;
+}
+
+.sideList{
+  font-size:2.5em;
+}
+
+.dList, .ab{
+  text-decoration: none;
+  color:white;
+  font-family: "Lucida Sans Unicode";
+}
+.distribution-list {
+  width: 100%;
+}
+
+.line-dist {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.line-about {
+  padding-top: 1em;
+  padding-bottom: 0em;
+}
+
+.line-white {
+  color: white;
+}
+
+.menuItem {
+  display: block;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.menuAbout {
+  display: block;
+  float:left;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 32%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.about-list {
+  margin-top:0.9em;
+}
+
+.menuAbout a {
+  font-size: 0.9em;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+
+.container {
+  background-color: white;
+  width:80%;
+  height:100%;
+  float:right;
+}
+
+.containerInner {
+  background-color: white;
+  height:auto;
+  width:100%;
+}
+
+.symbol {
+  clear:top;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding-top:2em;
+  padding-bottom:2em;
+  color:black;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", serif;
+}
+.h1 {
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.videoDistPage {
+  display: block;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.termsPage {
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+}
+
+.termsImage {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  background-image: url("../image/cc-license-dpc.PNG");
+  background-repeat: no-repeat;
+  background-size: 500px 200px;
+  background-position: center;
+  padding: 0.5em;
+}
+.qr-code-image {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  background-image: url("../image/dpc-qr-code.png");
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-position: center;
+  padding: 0.5em;
+}
+
+.contact {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-family: "Helvetica", serif;
+  font-size: 17px;
+  font-weight: bold;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.activePanel, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  border-bottom: 2px solid black;
+  display: none;
+  overflow: hidden;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.activePanel:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.footerDisplay {
+  display:none;
+}
+
+@media (max-width:1150px){
+  .sideMenu {
+    display:none;
+  }
+
+  .container {
+    width:100%;
+  }
+
+  .symbol {
+    width:90%;
+  }
+
+  .footerDisplay{
+    display:block;
+  }
+
+  .mobileAboutListOuter {
+    width:100%;
+    margin-top: 2.5em;
+    border-top: 2px solid black;
+    background-color: white;
+  }
+
+  .mobileAboutList {
+    min-height: 5em;
+    padding-top: 0.7em;
+    width:65%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+  }
+
+  .mobileAbout {
+    width:32%;
+    text-align: center;
+    float:left;
+  }
+  .mobileAbout a {
+    color:black;
+    text-decoration: none;
+  }
+
+  .videoDistPage {
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .termsPage {
+    width:95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0.4em;
+  }
+
+  .termsImage {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    background-image: url("../image/cc-license-dpc.PNG");
+    background-repeat: no-repeat;
+    background-size: 300px 140px;
+    background-position: center;
+    padding: 0.5em;
+  }
+
+  .qr-code-image {
+    width: 90%;
+  }
+
+  .contact {
+    width: 75%;
+  }
+
+  /* Style the navigation menu */
+  .topnav {
+    display:block;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: black;
+    color: white;
+  }
+}
+
+/* The following is from :
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_bottom
+*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}

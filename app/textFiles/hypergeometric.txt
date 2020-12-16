@@ -1,0 +1,26 @@
+The simplest way to view the distinction between the binomial distribution and the hypergeometric distribution is to
+note the way the sampling is done. The types of applications for the hypergeometric are very similar to those for the
+binomial distribution... in the case of the binomial distribution, independence among trials is required... the sampling
+must be done with replacement of each item after it is observed. On the otherhand, the hypergeometric distribution does
+not require independence and is based on sampling done without replacement.
+
+Applications for the hypergeometric distribution are foud in many areas, with heavy use in acceptance sampling,
+electronic testing, and quality assurance... in many of these fields, testing is done at the expense of the item being
+tested. That is, the item is destroyed and hence cannot be replaced in the sample. Thus, sampling without replacement
+is necessary...
+
+In general, we are interested in the probability of selecting x successes from the k items labeled successes and n-x
+failures from the N-k items labeled failures when a random sample of size n is selected from N items. This is known as
+a hypergeometric experiment, that is, one that possesses the following two properties:
+
+1. A random sample of size n is selected without replacement from N items.
+2. Of the N items, k may be classified as successes and N-k are classified as failures.
+
+The number X of successes of a hypergeometric experiment is called a hypergeometric random variable. Accordingly, the
+probability distribution of the hypergeometric variable is called the hypergeometric distribution, and its values are
+denoted by h(x;N,n,k), since they depend on the number of successes k in the set N from which we select n items.
+(Myers, Probability and Statistics for Engineers pg. 152 - 153)
+
+equation:
+h(x; N, n, k) = [combination(k; x) * combination(N-k; n-x)]/combination(N; n)
+

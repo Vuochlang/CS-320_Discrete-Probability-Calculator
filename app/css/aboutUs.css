@@ -1,0 +1,61 @@
+body{
+    background-color: black;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 30px;
+}
+
+p, ul{
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.5;
+}
+
+h1{
+    margin: 20px 0 0;
+    font-size: 35px;
+}
+
+.topPart{
+    font-family: Bahnschrift, sans-serif;
+    text-align: center;
+}
+.topPart{
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+/* The following @-webkit-keyframes code if from
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_glowing_text
+ */
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #002bc8, 0 0 40px #002bc8, 0 0 50px #002bc8, 0 0 60px #002bc8, 0 0 70px #002bc8;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #002bc8, 0 0 40px #002bc8, 0 0 50px #002bc8, 0 0 60px #002bc8, 0 0 70px #002bc8, 0 0 80px #002bc8;
+    }
+}
+
+b{
+    color: #00c1c8;
+}
+
+.logo{
+    width:70px;
+    height:70px;
+}
+
+h2{
+    margin-top: 30px;
+    font-family: Oswald, sans-serif;
+    color: #0061c8;
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+
+h4{
+    color: #94c5f8;
+    text-underline-mode: on ;
+}

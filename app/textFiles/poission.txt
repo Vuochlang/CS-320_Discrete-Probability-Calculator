@@ -1,0 +1,28 @@
+Experiments yielding nuymerical values of a random variable X, the number of outcomes occurring during a given time
+interval or in a specified region, are called Poisson experiments. The given time interval may be of any length, such as
+a minute, a day, a week, a month, or even a year. For example, a Poisson experiment can generate observations for the
+random variable X representing the number of telephone calls received per hour by an office, the number of days school
+is closed due to snow during the winter... X might represent the number of field mice per acre, the number of bacteria
+in a given culture, or the number of typing errors per page. A Poisson experiment is derived from the Poisson process
+and possesses the following properties.
+
+Properties of the Poisson Process
+
+1. The number of outcomes occurring in one time interval or specified region of space is independent of the number that
+occur in any other disjoint time interval or region. In this sense we say that the Poisson process has no memory.
+
+2. The probability that a single outcome will occur during a very short time interval or in a small region is
+proportional to the length of the time interval or the size of the region and does not depend on the number of outcomes
+occuring outside this time interval or region.
+
+3. The probability that more than one outcome will occur in such a short time interval or fall in such a small region
+is negligible.
+
+The number X of outcomes occurring during a Poisson experiment is called a Poisson random variable, and its probability
+distribution is called the Poisson distribution. The mean number of outcomes is computed from mu = lambda*t, where t is
+the specific "time," "distance," "area," or "volume" of interest. Since the probabilities depend on lambda, the rate of
+occurrence of outcomes, we shall denote them by p(x;lambda*t)... The following formula is used for computing Poisson
+probabilities.
+
+equation:
+P(x; μ) = [(e^-μ) * (μ^x)] / x!

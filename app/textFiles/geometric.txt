@@ -1,0 +1,13 @@
+The negative binomial distribution derives its name from the fact that each term in the expansion of p^k(1-q)^-k
+corresponds to the values of b*(x;k,p) for x = k, k+1, k+2,... If we consider the special case of the negative binomial
+distribution where k = 1, we have a probability distribution for the number of trials required for a single success. An
+example would be the tossing of a coin until a head occurs. We might be interested in the probability that the first head
+occurs on the fourth toss. The negative binomial distribution reduces to the form
+
+b*(x;1,p) = pq^(x-1), x = 1, 2, 3, ...
+
+Since the successive terms constitute a geometric progression, it is customary to refer to this special case as the
+geometric distribution and denote its values by g(x;p)
+
+equation:
+g(x;p) = pq^(x-1)

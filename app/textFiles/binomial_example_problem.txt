@@ -1,0 +1,9 @@
+// this example is from https://www.statisticshowto.com/probability-and-statistics/binomial-theorem/binomial-distribution-formula/
+A coin is tossed 10 times. What is the probability of getting exactly 6 heads?
+
+I’m going to use this formula: b(x; n, P) – nCx * Px * (1 – P)n – x
+The number of trials (n) is 10
+The odds of success (“tossing a heads”) is 0.5 (So 1-p = 0.5)
+x = 6
+
+P(x=6) = 10C6 * 0.5^6 * 0.5^4 = 210 * 0.015625 * 0.0625 = 0.205078125

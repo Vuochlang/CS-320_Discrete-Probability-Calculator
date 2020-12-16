@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Binomial Distribution</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../css/binomial.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/menuMobile.js"></script>
+  <script>
+    //https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file
+    $(function(){
+      $("#includeMobileMenu").load("mobileMenu.html");
+      $("#includeSideMenu").load("sideMenu.html");
+      $("#includeFooter").load("footer.html");
+    });
+  </script>
+</head>
+
+<body style="background-color:black;" onload="callBinomial(0,error1,error2,error3)">
+
+<!-- Mobile Top Navigation Menu -->
+<div id="includeMobileMenu" class="topnav">
+</div>
+
+<!-- Side Navigation Menu -->
+<div id="includeSideMenu" class="sideMenu">
+</div>
+
+<div class="container">
+  <div class="containerInner">
+  <div id="explain">
+    <h1 class="h1">Binomial Distribution</h1>
+    <hr/>
+
+    <!-- Start Accordian View -->
+    <button class="accordion">Explanation</button>
+    <div class="panel">
+      <iframe src="../textFiles/binomial.html" frameborder="0" height="960" width="100%"></iframe>
+    </div>
+
+    <button class="accordion">Example Problem</button>
+    <div class="panel">
+      <p><iframe src="../textFiles/binomial_example_problem.html" frameborder="0" height="1050" width="100%"></iframe></p>
+    </div>
+
+    <button class="accordion">Video</button>
+    <div class="panel">
+      <div class="videoDistPage"><iframe width="450" height="300" src="https://www.youtube.com/embed/qIzC1-9PwQo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p> Source: <a href="https://www.youtube.com/embed/qIzC1-9PwQo">https://www.youtube.com/embed/qIzC1-9PwQo</a><br>
+        </p>
+      </div>
+    </div>
+    <!-- End Accordian View -->
+
+  </div>
+
+  <!-- Inputs for the Distribution (START) -->
+  <div class="symbol">
+    x: <label for="x"></label>
+    <input type="text" name="x" id="x" style="text-align:center;" onkeyup="callBinomial(1,x.value,0,0)">
+
+    <label for="error1"></label>
+    <input type="text" id="error1" disabled><br>
+
+    n: <label for="n"></label>
+    <input type="text" name="n" id="n" style="text-align:center;" onkeyup="callBinomial(2,n.value,0,0)">
+
+    <label for="error2"></label>
+    <input type="text" id="error2" disabled><br>
+
+    p: <label for="p"></label>
+    <input type="text" name="p" id="p" style="text-align:center;" onkeyup="callBinomial(3,p.value,0,0)">
+
+    <label for="error3">
+    </label><input type="text" id="error3" disabled><br>
+
+    Result: <label for="result"></label>
+    <input type="text" name="Result" id="result" style="text-align:center;" disabled><br>
+
+    <button onclick="callBinomial('reset',0,0,0);">Reset</button>
+    <button onclick="callBinomial('calculate',0,0,0);">Result</button><br><br>
+  </div>
+  <!-- Inputs for the Distribution (End) -->
+    <div id="includeFooter" class="footerDisplay"></div>
+  </div>
+
+</div>
+<script type="text/javascript" src="../js/binomial.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/accordian.js"></script>
+</body>
+</html>

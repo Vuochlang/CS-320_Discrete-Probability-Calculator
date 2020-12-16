@@ -1,0 +1,18 @@
+//this example is from https://stattrek.com/probability-distributions/hypergeometric.aspx
+Suppose we randomly select 5 cards without replacement from an ordinary deck of playing cards. What is the probability of getting exactly 2 red cards (i.e., hearts or diamonds)?
+
+Solution:
+
+N = 52; since there are 52 cards in a deck.
+k = 26; since there are 26 red cards in a deck.
+n = 5; since we randomly select 5 cards from the deck.
+x = 2; since 2 of the cards we select are red.
+We plug these values into the hypergeometric formula as follows:
+h(x; N, n, k) = [ kCx ] [ N-kCn-x ] / [ NCn ]
+
+h(2; 52, 5, 26) = [ 26C2 ] [ 26C3 ] / [ 52C5 ]
+
+h(2; 52, 5, 26) = [ 325 ] [ 2600 ] / [ 2,598,960 ]
+
+h(2; 52, 5, 26) = 0.32513
+Thus, the probability of randomly selecting 2 red cards is 0.32513.

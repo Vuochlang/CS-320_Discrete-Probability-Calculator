@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link href="https://unpkg.com/mocha/mocha.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div id="mocha"></div>
+<script src="https://unpkg.com/chai/chai.js"></script>
+<script src="https://unpkg.com/mocha/mocha.js"></script>
+<script> mocha.setup('bdd') </script>
+
+<script src="../js/negative_binomial.js"></script>
+<script src="../js/common.js"></script>
+<script src="NegativeBinomial.js"></script>
+<script> mocha.run(); </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+An experiment often consists of repeated trials, each with two possible outcomes that may be labeled success or failre.
+The most obvious application deals with the testing of items as they come off an assembly line, where each trial may
+indicate a defective or a nondefective item. We may choose to define either outcome as a success. The process is referred
+to as a Bernoulli process. Each trial is called a Bernoulli trial.
+
+The number X of successes in n Bernoulli trials is called a binomial random variable. The probability distribution of
+this discrete random variable is called the binomial distribution, and its values will be denoted by b(x;n,p) since
+they depend on the number of trials and the probability of a success on a given trial.
+
+... consider the probability of x successes and n-x failures in a specified order. Since the trials are independent, we
+can multiply all the probabilities corresponding to the different outcomes. Each success occurs with probability p and
+each failure with probability q = 1 - p. Therefore, the probability for the specified order is p^x*q^(n-x). We must now
+determine the total number of sample points in the experiment that have x successes and n-x failures. This number is equal
+to the number of partitions of n outcomes into two groups with x in one group and n-x in the other and is written
+(n over x)... Because these paritions are mutually exclusive, we add the probabilites of all the different partitions to
+obtain the general formulas, or simply multiply p^x*q^(n-x) by (n over x).
+(Myers, Probability and Statistics for Engineers pg. 143 - 145)
+
+equation:
+b(x; n, P) = (n;x)*p^x*q^(n-x) where q = 1-p

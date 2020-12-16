@@ -1,0 +1,14 @@
+Let us consider an experiment where the properties are the same as those listed for a binomial experiment, with the
+exception that the trials will be repeated untiil a fixed number of successes occur. Therefore, instead of the
+probability of x successes in n trials, where n is fixed, we are now interested in the probability that the kth success
+occurs on the xth trial...
+
+The number X of trials required to produce k successes in a negative binomial experiment is called a negative binomial
+random variable, and its probability distribution is called the negative binomial distribution. Since its probabilities
+depend on the number of successes desired and the probability of a success on a given trial we shall denote them by
+b*(x;k,p)... Since the trials are independent we can multiply all the probabilities corresponding to each desired
+outcome. Each success occurs with prooability p and each failure with probability q=1-p.
+(Myers, Probability and Statistics for Engineers pg. 158 - 159)
+
+equation:
+p(x;r;p) = (x+r-1; r-1) * p^r * (1-p)^x

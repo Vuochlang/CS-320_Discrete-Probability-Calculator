@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ABOUT US</title>
+  <link rel="stylesheet" type="text/css" href="../css/aboutUs.css">
+</head>
+<body>
+
+  <div class="topPart">
+    <img src="../image/logo.jpg" class="logo" alt="logo"
+         onmouseover="hover(this);"
+         onmouseout="unhover(this);"
+         onclick="history.go(-1)">
+<!--         onclick="location.href='main.html';">-->
+
+    <h1>Discrete Probability Calculator v1.0</h1>
+  </div>
+
+  <h2>WHO WE ARE:</h2>
+
+  <h4>Team members:</h4>
+  <P>Vuochlang Chang, Patrick Tsai, Zhicheng Zhou</P>
+
+  <h4>Group information:</h4>
+  <p> Fall 2020, Junior students at Washington state university of Vancouver</p>
+
+  <h4>Project Information:</h4>
+  <p>The <b>Discrete Probability Calculator (DPC)</b> is a group project designed for a class <u>CS 320 -
+    Fundamentals of Software Engineering</u>. It is based on 4 requirements as followed:</p>
+  <ul>
+    <li>It is a web application</li>
+    <li>It has a landing page that helps a user to understand what the application is about</li>
+    <li>Besides the landing page, it has multiple other pages</li>
+    <li>It has some data to maintain/manipulate</li>
+  </ul>
+
+  <h2>DESCRIPTION:</h2>
+
+  <p>For this project, we are creating a web-based calculator that calculates five different discrete distributions
+      based on user's selection and inputs. The <b c>Discrete Probability Calculator</b> is a simple website-based application
+      that users can use to calculate the probability of the discrete distribution. There are multiple ways where the
+      user can access the calculations for each distribution.
+  </p>
+
+  <p>The overall goals of the system are:</p>
+    <ul>
+      <li>To provide easy access to the users to calculate discrete probabilities;
+      Users can access DPC website through any browsers whether from their smartphones or computers</li>
+      <li>To provide as another option from a TI-84 calculator or other versions</li>
+      <li>To help users to understand each probability better with the Help sections</li>
+      <li>To improve our understanding of building a web application that interacts with user input</li>
+    </ul>
+
+  <p>The DPC system is <u>intended for study purposes</u>, its intended use is for student/academic questions. However, the
+    DPC system is NOT intended to be used as a tool to make any real-life decisions, as that any probabilities derived
+    from the program should not be used to make important life decisions.</p><br>
+
+  <hr><hr>
+
+</body>
+<script>
+  function hover(element) {
+    element.setAttribute('src', "../image/blue-logo.jpg");
+  }
+
+  function unhover(element) {
+    element.setAttribute('src', "../image/logo.jpg");
+  }
+</script>
+</html>

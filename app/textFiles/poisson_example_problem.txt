@@ -1,0 +1,20 @@
+// this is from https://stattrek.com/probability-distributions/poisson.aspx
+
+The average number of homes sold by the Acme Realty company is 2 homes per day. What is the probability that exactly 3 homes will be sold tomorrow?
+
+Solution: This is a Poisson experiment in which we know the following:
+
+λ = 2; since 2 homes are sold per day, on average.
+x = 3; since we want to find the likelihood that 3 homes will be sold tomorrow.
+e = 2.71828; since e is a constant equal to approximately 2.71828.
+We plug these values into the Poisson formula as follows:
+
+P(x; λ) = (e^-λ) (λ^x) / x!
+
+P(3; 2) = (2.71828-2) (23) / 3!
+
+P(3; 2) = (0.13534) (8) / 6
+
+P(3; 2) = 0.180
+
+Thus, the probability of selling 3 homes tomorrow is 0.180 .

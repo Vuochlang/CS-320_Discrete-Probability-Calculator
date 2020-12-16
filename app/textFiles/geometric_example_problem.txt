@@ -1,0 +1,6 @@
+// this example is from https://www.statisticshowto.com/geometric-distribution/#:~:text=The%20geometric%20distribution%20would%20represent,X%3D4%20and%20so%20on.
+If your probability of success is 0.2, what is the probability you meet an independent voter on your third try?
+Inserting 0.2 as p and with X = 3, the probability density function becomes:
+f(x) = (1 − p)x − 1*p
+P(X=3) = (1 − 0.2)3 − 1(0.2)
+P(X=3) = (0.8)2*0.2 = 0.128.

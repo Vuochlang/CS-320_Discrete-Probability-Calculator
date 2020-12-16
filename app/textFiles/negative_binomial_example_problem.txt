@@ -1,0 +1,14 @@
+// this is from https://www.statisticshowto.com/negative-binomial-experiment/
+
+You are surveying people exiting from a polling booth and asking them if they voted independent.
+The probability (p) that a person voted independent is 20%. What is the probability that 15 people must be asked before
+you can find 5 people who voted independent?
+
+Step 1: Find p, r and X.
+We are given (in the question) that p = 20%(.2) and r = 5. The number of failures, X, is 15 – 5 = 10.
+
+Step 2: Insert those values from Step 1 into the formula:
+p(x;r;p) = (x+r-1; r-1) * p^r * (1-p)^x
+
+Step 3: Solve. The first part (14 over 4) is a combination.
+1001*.25*.810 = 0.034.

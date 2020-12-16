@@ -1,0 +1,161 @@
+html,body{
+			width:100%;
+			height:100%;
+			margin:0px;
+			border:0px;
+      		/*display:block; no floating*/
+      		/*position: fixed;*/
+}
+
+.landingPageContainer {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+}
+
+.logoContainer {
+  display: block;
+  text-align:center;
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../image/logo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position: center;
+  padding: 0.5em;
+  height:100px;
+}
+
+.titleContainer {
+  display: block;
+  text-align:center;
+  margin-top: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../image/title1.jpg");
+  background-repeat: no-repeat;
+  background-size: 400px 100px;
+  background-position: center;
+  padding: 0.5em;
+  height:100px;
+}
+
+.logoContainer:hover {
+  background-image: url("../image/logo2.jpg");
+}
+
+.titleContainer:hover {
+  background-image: url("../image/title2.jpg");
+}
+
+.optionsContainer {
+  display: block;
+  text-align: center;
+  width:40%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.optionsContainer a {
+  text-decoration: none;
+}
+
+.optionsContainer p {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", serif;
+  vertical-align: middle;
+  font-size:0.9em;
+  color:black;
+  margin-top: 0.3em;
+}
+
+.Binomial,.Geometric,.Negative_binomial,.Hypergeometric,.Poisson {
+  margin-top: 0.5em;
+	width:100%;
+  height: 1.9em;
+  background-color: white;
+	border:2px solid white;
+}
+.Geometric:hover p,.Hypergeometric:hover p,.Negative_binomial:hover p,.Binomial:hover p,.Poisson:hover p {
+	color:white;
+}
+
+.Binomial:hover{
+	background:#6B8E23;
+	border:2px solid #6B8E23;
+}
+
+.Geometric:hover{
+	background:#CB7123;
+	border:2px solid #CB7123;
+}
+
+.Hypergeometric:hover{
+	background:#833D3F;
+	border:2px solid #833D3F;
+}
+
+.Negative_binomial:hover{
+	background:#484941;
+	border:2px solid #484941;
+}
+
+.Poisson:hover{
+	background:#203C54;
+	border:2px solid #203C54;
+}
+
+.about-list {
+  margin-top:1.5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
+  border-top:2px solid white;
+}
+
+.menuAbout {
+  display: block;
+  float:left;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 32%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.menuAbout a {
+  font-size: 0.9em;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+
+@media (max-width:1250px) {
+  .landingPageContainer {
+    width:90%;
+  }
+
+  .optionsContainer {
+    width:60%;
+  }
+
+  .about-list {
+    width:50%;
+  }
+}
+
+@media (max-width:850px) {
+  .optionsContainer {
+    width:90%;
+  }
+  .about-list {
+    width:90%;
+  }
+  .titleContainer {
+    background-size: 300px 80px;
+  }
+}
