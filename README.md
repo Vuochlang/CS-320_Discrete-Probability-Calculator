@@ -1,6 +1,6 @@
 # CS-320-Fundamentals of Software Engineering
 
-# Group Project: Discrete Probability Calculator v1.0
+# Group Project: Discrete Probability Calculator (DPC) v1.0
 
 # Team members: 
   Vuochlang Chang, Patrick Tsai, Zhicheng Zhou
