@@ -7,7 +7,7 @@
 
 The overall goals of the system are:
   _To provide easy access to the users to calculate discrete probabilities; Users can access DPC website through any browsers whether from their smartphones or computers
-  _To provide as another option from a TI-84 calculator or other versions
+  \nTo provide as another option from a TI-84 calculator or other versions
   _To help users to understand each probability better with the Help sections
   _To improve our understanding of building a web application that interacts with user input.
 
