@@ -15,11 +15,3 @@ To help users to understand each probability better with the Help sections
 To improve our understanding of building a web application that interacts with user input.
 
 The DPC system is intended for study purposes, its intended use is for student/academic questions. However, the DPC system is NOT intended to be used as a tool to make any real-life decisions, as that any probabilities derived from the program should not be used to make important life decisions.
-
-Current Status: implementation phase
-
-# website: https://dpc.patricktsai.com/html/main.html
-
-Mocha/Chai testing (run on server realtime): https://dpc.patricktsai.com/html/contact.html
-
-Date of update: 12/16/2020
